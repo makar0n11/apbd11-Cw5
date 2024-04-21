@@ -1,4 +1,4 @@
-using apbd11_Cw5.Endpoints;
+
 using Microsoft.AspNetCore.Http.HttpResults;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,7 +20,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapAnimalEndpoints();
 
 //Controllers
 app.MapControllers();

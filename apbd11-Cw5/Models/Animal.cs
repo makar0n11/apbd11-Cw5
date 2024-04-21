@@ -2,6 +2,19 @@ namespace apbd11_Cw5.Models;
 
 public class Animal
 {
-    private int Id { get ; set; }
-    private string Name { get ; set; }
+    public int Id { get ; set; }
+    public string Name { get ; set; }
+    public string Category { get ; set; }
+    public double Weight { get ; set; }
+    public string FurColor { get ; set; }
+
+    public Animal(int id, string name, string category, double weight, string furColor)
+    {
+        Id = id;
+        Name = name;
+        Category = category;
+        Weight = weight;
+        FurColor = furColor;
+    }
+    
 }
